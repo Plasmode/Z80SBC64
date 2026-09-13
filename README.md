@@ -26,18 +26,12 @@ Instead of the EPM7128S, a smaller EPM7064S is used because it is available in P
 
 ![annotated](Z80SBC64_topview_annotated.jpg)
 ### Design information
-
-- Schematic
-
-- Gerber photoplots, the boards were manufacturered by Seeed Studio.
-
-- Rev 1 of Gerber photoplots, minor corrections to rev 0. The pc boards were manufacturered by JLCPCB
-
-- Altera EPM7064SLC44 design file. The design are created as schematic in Quartus 8.1. This is a PDF file of the schematic
-
+- [Schematic](z80sbc64_scm.pdf)
+- [Rev 1 Gerber photoplots](z80sbc64_r1_single.zip), minor corrections to rev 0. The pc boards were manufacturered by JLCPCB
+- [Altera EPM7064SLC44 design file](z80sbc64_epm7064.zip). The design are created as schematic in Quartus 8.1.
+  - [CPLD schematic](z80sbc64_cpld_scm.pdf) in PDF format
 - Memory and I/O map
-
-- Bill of Materials
+- [Bill of Materials](bill_of_material_z80sbc64_r0.pdf)
 
 ### Software
 - Z80SBCLD is the bootstrap loader. Configure Z80SBC64 to Serial Bootstrap mode and send Z80SBCLD.BIN as binary file to Z80SBC64 immediately after reset. Z80SBC64 will respond with “Z80SBC64 Loader v0.3” sign on message and ready to receive ZMon64 load file. Once ZMon64 is loaded, it will start program execution at 0xB400 which is the entry point of ZMon64.
