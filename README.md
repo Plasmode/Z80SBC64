@@ -34,15 +34,15 @@ Instead of the EPM7128S, a smaller EPM7064S is used because it is available in P
 - [Bill of Materials](bill_of_material_z80sbc64_r0.pdf)
 
 ### Software
-- Z80SBCLD is the bootstrap loader. Configure Z80SBC64 to Serial Bootstrap mode and send Z80SBCLD.BIN as binary file to Z80SBC64 immediately after reset. Z80SBC64 will respond with “Z80SBC64 Loader v0.3” sign on message and ready to receive ZMon64 load file. Once ZMon64 is loaded, it will start program execution at 0xB400 which is the entry point of ZMon64.
+- [Z80SBCLD](Software/z80sbcld.zip) is the bootstrap loader. Configure Z80SBC64 to Serial Bootstrap mode and send Z80SBCLD.BIN as binary file to Z80SBC64 immediately after reset. Z80SBC64 will respond with “Z80SBC64 Loader v0.3” sign on message and ready to receive ZMon64 load file. Once ZMon64 is loaded, it will start program execution at 0xB400 which is the entry point of ZMon64.
 
-- ZMon64 rev 0.7, improve the 'R' command, add 'c1' command to store SCMonitor in RAM and 'b1' command to execute the stored SCMonitor. Add 'c3' command to store CP/M 3 and 'b3' command to execute CP/M 3.
+- [ZMon64 rev 0.7](Software/zmon64_r0_7.zip), improve the 'R' command, add 'c1' command to store SCMonitor in RAM and 'b1' command to execute the stored SCMonitor. Add 'c3' command to store CP/M 3 and 'b3' command to execute CP/M 3.
 
-- SCMonitor is a sophisticated monitor developed by Steve Cousins. It has many features, among them a version of MS BASIC that runs well on Z80SBC64. After loading the hex file, type 'g0000' to start up SCMonitor.
+- [SCMonitor](Software/scmonitor.hex) is a sophisticated monitor developed by [Steve Cousin](https://smallcomputercentral.com/). It has many features, among them a version of MS BASIC that runs well on Z80SBC64. After loading the hex file, type 'g0000' to start up SCMonitor.
 
-- SCMonitor+StarTrek This version of SCMonitor already have the StarTrek program loaded in BASIC. Type 'WBASIC' in SCMonitor prompt and then 'RUN'.
+- [SCMonitor+StarTrek](Software/scmonitor_startrek.hex) This version of SCMonitor already have the StarTrek program loaded in BASIC. Type 'WBASIC' in SCMonitor prompt and then 'RUN'.
 
-- cpm22all is CP/M2.2 BDOS/CCP/BIOS for Z80SBC64. Use 'c2' command to store it in CF disk and use 'b2' command to boot into CP/M2.2. The software is assembled using Zilog ZDS v3.68.
+- [cpm22all](Software/cpm22all_z80sbc64.zip) is CP/M2.2 BDOS/CCP/BIOS for Z80SBC64. Use 'c2' command to store it in CF disk and use 'b2' command to boot into CP/M2.2. The software is assembled using Zilog ZDS v3.68.
 
 - XMODEM is the file transfer program to bring in all CP/M programs from PC to Z80SBC64. While in monitor, send XMODEM.HEX as Intel Hex file, type 'b2' to boot into CP/M2.2, then type 'save 17 xmodem.com'. XMODEM.COM will be created as the first file on the CP/M disk. To invoke XMODEM to receive files, type 'xmodem filename /r/c/z1' and go to the terminal program to send file via xmodem.
 
