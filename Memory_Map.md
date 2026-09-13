@@ -23,4 +23,3 @@ Compact flash registers are 0x10 to 0x17
 ### Bank Select Register
 Bank select register is write only located at 0x1F
 
-bu
