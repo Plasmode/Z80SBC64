@@ -141,6 +141,7 @@ press Return to execute command
 Test memory from 0xC000 to 0xFFFE and from 0x0 to 0xAFFF. The memory is filled with unique test patterns generated from a seed value. The seed value is changed for each iteration of the test. Each completed iteration will display an 'OK' message. Any keystroke during the test with abort the test and return to command prompt.
 
 **E**
+
 Edit memory specified with the 4 hexadecimal digits value. Exit the edit session with 'X'
 ```
 E 0000
