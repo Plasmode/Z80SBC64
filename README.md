@@ -58,8 +58,8 @@ Instead of the EPM7128S, a smaller EPM7064S is used because it is available in P
 
 ### Instruction and Manuals
 - [Getting started](Manuals/Getting_started.md) guide
-- ZMon64 manual
-- Pictorial assembly guide
-- Build Z80SBC64 in four stages, building a high-performance, CP/M capable Z80 SBC in four stages
-- Creating new CF disk for Z80SBC64 and Z80MB64 with a TeraTerm Macro
+- [ZMon64 manual](Manuals/ZMon.md)
+- [Pictorial assembly guide](Manuals/Assembly_guide.md)
+- [Build Z80SBC64 in four stages](Manuals/Build_Z80_in_4stages.md), building a high-performance, CP/M capable Z80 SBC in four stages
+- [Creating new CF disk](Manuals/Create_CF_with_Macro.md) for Z80SBC64 and Z80MB64 with a TeraTerm Macro
 
