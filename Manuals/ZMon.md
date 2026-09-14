@@ -74,6 +74,7 @@ Data NOT same as previous read
 carriage return for next sector, any other key for command prompt
 ```
 **D**
+
 display memory from 4 hexadecimal digits start address to 4 hexadecimal end address. If start address is greater than the end address, only 1 line (16 bytes) of data will be displayed.
 ```
 D 0400 0420
@@ -118,27 +119,30 @@ list memory as Intel Hex, start address=1000 end address=1100
 :1010F000FDE0F8B2CA8BADBD0BEC3C3CFE03020137
 :00000001FF
 ```
-Z
+**Z**
+```
 zero memory
 press Return to execute command
-
+```
 Fill memory from 0xC000 to 0xFFFE and from 0x0 to 0xAFFF with 0x0. Press carriage return to confirm the command execution; press other key to abort the command
 
-F
+**F**
+```
 fill memory with 0xFF
 press Return to execute command
-
+```
 Fill memory from 0xC000 to 0xFFFE and from 0x0 to 0xAFFF with 0xFF. Press carriage return to confirm the command execution; press other key to abort the command
 
-T
+**T**
+```
 test memory
 press Return to execute command
-
+```
 Test memory from 0xC000 to 0xFFFE and from 0x0 to 0xAFFF. The memory is filled with unique test patterns generated from a seed value. The seed value is changed for each iteration of the test. Each completed iteration will display an 'OK' message. Any keystroke during the test with abort the test and return to command prompt.
 
-E
+**E**
 Edit memory specified with the 4 hexadecimal digits value. Exit the edit session with 'X'
-
+```
 E 0000
 
 0000 : FF 12 12
@@ -146,23 +150,26 @@ E 0000
 0002 : EF 00 00
 0003 : 7F 01 01
 0004 : F7 x
-
-X
+```
+**X**
+```
 clear disk directories
 A – drive A,
 B – drive B:
 C – drive C,
 D – drive D,
-
+```
 Fill the directories of the selected disk with 0xE5. This effectively erase the entire disk. The disk letter __mustu be in upper case. Confirm the command with a carriage return or abort command with any other key stroke.
 
-B
+**B**
+```
 boot CP/M
 1–User Apps,
 2–CP/M2.2:
 3–CP/M3:
+```
 Enter '2' to boot CP/M 2.2 (it is the only option for now). This assumes the appropriate software has been copied to RAM disk as described under the “C” command. Confirm the command with a carriage return or abort command with any other key stroke.
-
+```
 boot CP/M
 1–User Apps,
 2–CP/M2.2:
@@ -171,12 +178,13 @@ Copyright 1979 © by Digital Research
 CP/M 2.2 for Z80SBC64 Rev1 12/16/18
 
 a>
-
-C
+```
+**C**
+```
 copy to CF
 0–boot,
 1–User Apps,
 2–CP/M2.2:
 3–CP/M3:
-
+```
 Prior to execution of the C2 command, CP/M2.2 BDOS/CCP/BIOS must be loaded in memory 0xDC00-0xFFFF.
