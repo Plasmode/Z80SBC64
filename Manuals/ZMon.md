@@ -7,10 +7,9 @@ When Z80MB64 or Z80SBC64 board is powered up the very first time, the Bootstrap 
 
 ### ZMon64 commands
 
-ZMon64 is a simple monitor with the following single-key commands. Except when noted, the commands may be entered in upper or lower cases. In the following description, command entered is in **bold**, the response is in *italic*.
+ZMon64 is a simple monitor with the following single-key commands. Except when noted, the commands may be entered in upper or lower cases. In the following description, command entered is in **bold**.
 
 **H**
-*
 ```
 help
 G <addr> CR
@@ -24,7 +23,7 @@ X <options> CR
 B <options> CR
 C <options> CR
 ```
-*
+
 **G**
 *go to address: 0x*
 
