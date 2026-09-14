@@ -22,6 +22,6 @@ While this macro works well, it can use some improvements:
 1. A way to slow down the 'send' command so there is small delay between each character sent. Right now I send 5 characters, wait 100mS, send 5 more, wait, etc. It works, but it is ugly.
 2. A way to set the default directory for MACRO. Right now I specify the filepath to “c:\teraterm\newcf”; I like to have more flexibility where files are stored.
 
-Software
-All files required to create a new CF disk
+### Software
+[All files](newcf_z80sbc64.zip) required to create a new CF disk
 
