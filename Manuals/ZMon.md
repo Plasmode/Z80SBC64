@@ -25,13 +25,15 @@ C <options> CR
 ```
 
 **G**
+```
 *go to address: 0x*
-
+```
 Enter the 4 hexadecimal address values. Confirm the command execution with a carriage return or abort the command with other keystroke.
 
 **R**
+```
 *read CFdisk track:0x*
-
+```
 Enter the 2 hexadecimal digits for the track number and 2 hex digits for the sector value. The content of the selected track/sector will be displayed as 512-byte data block. Press carriage return for next sector or any other key to return to command prompt.
 
 *>read CF disk track:0x01 sector:0x00
