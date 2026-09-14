@@ -15,7 +15,7 @@ Apply +5V power to the board, remove the power and apply the power again. This r
 Z80SBC64 Loader v0.3
 Auto start at 0xB400
 ```
-This is Z80SBC64 correctly received and executing the 255 bootstrap code. It is ready for Intel Hex load file. Send the ZMon64.hex and be sure to uncheck the binary box if running TeraTerm. The bootstrap code will respond with a period ('.') for every Intel Hex record and finished with a 'X'. It will then start execution automatically and display this prompt:
+This is Z80SBC64 correctly received and executing the 255 bootstrap code. It is ready for Intel Hex load file. Send the ZMon64.hex and be sure to **uncheck the binary box** if running TeraTerm. The bootstrap code will respond with a period ('.') for every Intel Hex record and finished with a 'X'. It will then start execution automatically and display this prompt:
 
 *Z80SBC64 Monitor v{x.x} {date}*
 
@@ -23,7 +23,7 @@ Type 'c0' to copy ZMon64 to the bootstrap RAM area which is located in a differe
 
 For TeraTerm users in Windows environment, the remaining software can be installed using a TeraTerm Macro here:
 
-To install CP/M 2.2, load [cpm22all.hex](../Software/cpm22all_z80sbc64.zip) and type 'c2' to copy cpm22 CCP/BDOS/BIOS to track 0 of CF disk. Type “xA” to clear the directory of CF drive A:, “xB” to clear the directory of drive B:, etc. load XMODEM.HEX in ZMon64 and then type 'b2' to boot CP/M 2.2. At CP/M prompt, a>, type
+To install CP/M 2.2, load [cpm22all.hex](../Software/cpm22all_z80sbc64.zip) and type 'c2' to copy cpm22 CCP/BDOS/BIOS to track 0 of CF disk. Type “xA” to clear the directory of CF drive A:, “xB” to clear the directory of drive B:, etc. load [XMODEM.HEX](../Software/xmodem.hex) in ZMon64 and then type 'b2' to boot CP/M 2.2. At CP/M prompt, a>, type
 
 **save 17 xmodem.com**
 
@@ -31,9 +31,9 @@ This will create a file “xmodem.com” in drive A: From now on, use xmodem to 
 
 **xmodem filename /r/c/z1**
 
-The first file to transfer is depkg.com and the 2nd file is cpm22dri.pkg. After both files are transferred, type
+The first file to transfer is [unarj.com](../Software/unarj.zip) and the 2nd file is [cpm22dri.arj](../Software/cpm22dri.zip). After both files are transferred, type
 
-**depkg cpm22dri.pkg**
+**unarj e cpm22dri.arj**
 
 The CP/M 2.2 distribution files will be unpacked and copied into drive A: CP/M2.2 is ready to use now.
 
