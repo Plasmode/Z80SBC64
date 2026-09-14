@@ -57,13 +57,9 @@ Instead of the EPM7128S, a smaller EPM7064S is used because it is available in P
 - unarj.com is the CP/M program that decompresses CPM3ALL.ARJ and CPM22DRI.ARJ above. The command is “unarj e filename”
 
 ### Instruction and Manuals
-- Getting started guide
-
+- [Getting started](Manuals/Getting_started.md) guide
 - ZMon64 manual
-
 - Pictorial assembly guide
-
 - Build Z80SBC64 in four stages, building a high-performance, CP/M capable Z80 SBC in four stages
-
 - Creating new CF disk for Z80SBC64 and Z80MB64 with a TeraTerm Macro
 
