@@ -44,17 +44,17 @@ Instead of the EPM7128S, a smaller EPM7064S is used because it is available in P
 
 - [cpm22all](Software/cpm22all_z80sbc64.zip) is CP/M2.2 BDOS/CCP/BIOS for Z80SBC64. Use 'c2' command to store it in CF disk and use 'b2' command to boot into CP/M2.2. The software is assembled using Zilog ZDS v3.68.
 
-- [XMODEM](https://github.com/Plasmode/ZRCC/blob/main/rev1.0_rev1.1/software/cpm_software_xmodem.hex) is the file transfer program to bring in all CP/M programs from PC to Z80SBC64. While in monitor, send XMODEM.HEX as Intel Hex file, type 'b2' to boot into CP/M2.2, then type 'save 17 xmodem.com'. XMODEM.COM will be created as the first file on the CP/M disk. To invoke XMODEM to receive files, type 'xmodem filename /r/c/z1' and go to the terminal program to send file via xmodem.
+- [XMODEM](Software/xmodem.hex) is the file transfer program to bring in all CP/M programs from PC to Z80SBC64. While in monitor, send XMODEM.HEX as Intel Hex file, type 'b2' to boot into CP/M2.2, then type 'save 17 xmodem.com'. XMODEM.COM will be created as the first file on the CP/M disk. To invoke XMODEM to receive files, type 'xmodem filename /r/c/z1' and go to the terminal program to send file via xmodem.
 
 - [CPM22DRI](https://github.com/Plasmode/ZRCC/blob/main/rev1.0_rev1.1/software/cpm22dri.zip) is system files for CP/M2.2. Unzip the file to CPM22DRI.ARJ then use XMODEM to transfer it to CP/M. Once transferred, use unarj.com to decompress the files. CPM22DRI image is created using cpmtools.
 
-- CPM3LDR is CP/M 3 loader program. Upload CPM3LDR.hex and type 'c3' to install it in the reserved sectors in CF drive. type 'b3' to boot CP/M 3
+- [CPM3LDR](https://Software/cpm3ldr.hex) is CP/M 3 loader program. Upload CPM3LDR.hex and type 'c3' to install it in the reserved sectors in CF drive. type 'b3' to boot CP/M 3
 
-- CPM3 BIOS for Z80MB64 and Z80SBC64. They are assembled with ZMAC.
+- [CPM3 BIOS](Software/z80sbc64_cpm3.zip) for Z80MB64 and Z80SBC64. They are assembled with ZMAC.
 
-- CPM3ALL is CP/M 3 distribution files. Unzip to CPM3ALL.ARJ, then xmodem to Z80SBC64 and use unarj.com to decompress into drive A:
+- [CPM3ALL](Software/cpm3all.zip) is CP/M 3 distribution files. Unzip to CPM3ALL.ARJ, then xmodem to Z80SBC64 and use unarj.com to decompress into drive A:
 
-- [unarj.com](https://github.com/Plasmode/ZRCC/blob/main/rev1.0_rev1.1/software/unarj.zip) is the CP/M program that decompresses CPM3ALL.ARJ and CPM22DRI.ARJ above. The command is “**unarj e filename**”
+- [unarj.com](Software/unarj.zip) is the CP/M program that decompresses CPM3ALL.ARJ and CPM22DRI.ARJ above. The command is “**unarj e filename**”
 
 ### Instruction and Manuals
 - [Getting started](Manuals/Getting_started.md) guide
